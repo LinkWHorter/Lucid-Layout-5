@@ -1,0 +1,6 @@
+body {
+  background-color: yellow; }
+
+@media (max-width: 567px) {
+  body {
+    background-color: aquamarine; } }
