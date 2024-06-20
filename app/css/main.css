@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("/fonts/SourceSansPro-Regular.otf"); }
+
+@font-face {
+  font-family: 'Source Sans Bold';
+  src: url("/fonts/SourceSansPro-Bold.otf"); }
+
 body {
   margin: unset;
   padding: unset;
@@ -15,6 +23,7 @@ body {
       width: 100%; } }
 
 .container {
+  padding-top: 32px;
   width: 100%;
   margin: 0 auto;
   font-family: 'Source Sans Pro'; }
@@ -49,28 +58,41 @@ body {
     .main-div {
       background-size: cover; } }
   .main-div .main-menu {
-    padding-top: 16px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    text-align: center; }
     @media (min-width: 568px) {
       .main-div .main-menu {
-        flex-direction: row; } }
-    .main-div .main-menu h1 {
-      margin-top: 0;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 0;
-      color: white;
-      text-align: center; }
-      @media (min-width: 568px) {
-        .main-div .main-menu h1 {
-          text-align: left; } }
-    .main-div .main-menu a {
+        flex-direction: row;
+        text-align: left; } }
+    .main-div .main-menu .title {
       display: flex;
+      flex-direction: row;
+      margin: 0 auto; }
+      @media (min-width: 568px) {
+        .main-div .main-menu .title {
+          margin: 0; } }
+      .main-div .main-menu .title h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        color: white; }
+      .main-div .main-menu .title p {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+        color: gray;
+        flex-direction: column; }
+    .main-div .main-menu a {
+      padding-right: 12px;
+      display: inline;
       text-align: center;
       flex-direction: column;
       text-decoration: none;
@@ -80,3 +102,36 @@ body {
           text-align: left;
           display: inline;
           flex-direction: row; } }
+
+.block-content {
+  padding: 5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between; }
+  @media (min-width: 568px) {
+    .block-content {
+      padding: 0%;
+      text-align: left;
+      flex-direction: row; } }
+  .block-content .first-content {
+    width: 75%;
+    font-size: small; }
+    @media (min-width: 568px) {
+      .block-content .first-content {
+        width: 35%;
+        font-size: medium; } }
+    .block-content .first-content .content-title, .block-content .first-content h1 {
+      font-family: 'Source Sans Bold'; }
+    .block-content .first-content .content-title {
+      color: #1a77ac; }
+    .block-content .first-content h1 {
+      color: white; }
+    .block-content .first-content p {
+      color: gray; }
+  .block-content .second-content {
+    width: 40%; }
+    .block-content .second-content img {
+      width: 100%; }
