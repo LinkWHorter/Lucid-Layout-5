@@ -1,0 +1,117 @@
+.block-content {
+    padding: 5%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  
+    @include bp-up(sm) {
+      padding: 0%;
+      text-align: left;
+      flex-direction: row;
+    }
+  
+    & .first-content {
+      width: 75%;
+      font-size: small;
+  
+      @include bp-up(sm) {
+        width: 35%;
+        font-size: medium;
+      }
+  
+      & .content-title, h1 {
+        font-family: 'Source Sans Bold';
+      }
+  
+      & .content-title {
+        color: rgb(26, 119, 172);
+      }
+  
+      & h1 {
+        color: white;
+      }
+  
+      & p {
+        color: gray;
+      }
+    }
+  
+    & .second-content {
+      width: 40%;
+      img {
+        display: none;
+        padding-top: 15%;
+        width: 100%;
+  
+        @include bp-up(sm) {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  .product-overview {
+    border-bottom: 0.5px solid lightgray;
+  
+    & .title-block {
+      margin-top: 20px;
+      padding: 28px;
+  
+      & .content-title, h2 {
+        padding-top: -12px;
+        text-align: center;
+        font-family: 'Source Sans Bold';
+      }
+  
+      & .content-title {
+        color: rgb(26, 119, 172);
+      }
+    }
+  
+    & .content-block {
+      margin: 0 auto;
+  
+      & .features-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        @include margin-top-bot;
+  
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        & .image-block {
+          display: flex;
+          align-items: center;
+          width: 76px;
+          height: 76px;
+          border-radius: 64px;
+          border: 0.5px solid lightgray;
+          justify-content: center;
+        }
+  
+        & .text-block {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center; /* Выравнивание содержимого блока по горизонтали по центру */
+          align-items: center;
+  
+          & > p {
+            width: 180px;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
