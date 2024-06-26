@@ -134,4 +134,5 @@ body {
   .block-content .second-content {
     width: 40%; }
     .block-content .second-content img {
+      padding-top: 15%;
       width: 100%; }
