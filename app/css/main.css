@@ -109,8 +109,7 @@ body {
   width: 40px;
   height: 2px;
   background: #1a77ac;
-  padding-top: 1px;
-  margin: 0 auto; }
+  padding-top: 1px; }
 
 .block-content {
   padding: 5%;
@@ -161,6 +160,8 @@ body {
       font-family: 'Source Sans Bold'; }
     .product-overview .title-block .content-title {
       color: #1a77ac; }
+    .product-overview .title-block .blue-line {
+      margin: 0 auto; }
   .product-overview .content-block {
     margin: 0 auto; }
     .product-overview .content-block .features-block {
@@ -195,3 +196,74 @@ body {
         .product-overview .content-block .features-block .text-block > p {
           width: 180px;
           color: gray; }
+
+.dip-into-details, .div-customize {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media (min-width: 568px) {
+    .dip-into-details, .div-customize {
+      flex-direction: row;
+      text-align: left; } }
+  .dip-into-details .content-title, .dip-into-details h2, .div-customize .content-title, .div-customize h2 {
+    padding-top: -12px;
+    text-align: center;
+    font-family: 'Source Sans Bold'; }
+    @media (min-width: 568px) {
+      .dip-into-details .content-title, .dip-into-details h2, .div-customize .content-title, .div-customize h2 {
+        text-align: left; } }
+  .dip-into-details .content-title, .div-customize .content-title {
+    color: #1a77ac; }
+  .dip-into-details h2, .div-customize h2 {
+    padding-bottom: 16px; }
+  .dip-into-details > div, .div-customize > div {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .dip-into-details .image-block img, .div-customize .image-block img {
+    width: 100%; }
+  .dip-into-details .text-blocks, .div-customize .text-blocks {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 568px) {
+      .dip-into-details .text-blocks, .div-customize .text-blocks {
+        width: 30%;
+        text-align: left;
+        margin: 0; } }
+    .dip-into-details .text-blocks > p, .div-customize .text-blocks > p {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      color: gray; }
+    .dip-into-details .text-blocks .paragraphs, .div-customize .text-blocks .paragraphs {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .dip-into-details .text-blocks .paragraphs > p, .div-customize .text-blocks .paragraphs > p {
+        display: flex;
+        align-items: center;
+        color: gray; }
+      .dip-into-details .text-blocks .paragraphs div img, .div-customize .text-blocks .paragraphs div img {
+        width: 16px;
+        margin-right: 10px; }
+      .dip-into-details .text-blocks .paragraphs div > p, .div-customize .text-blocks .paragraphs div > p {
+        text-align: left;
+        color: black; }
+  .dip-into-details .blue-line, .div-customize .blue-line {
+    margin: 0 auto; }
+    @media (min-width: 568px) {
+      .dip-into-details .blue-line, .div-customize .blue-line {
+        margin: 0; } }
+
+.div-customize {
+  background-color: WhiteSmoke; }

@@ -21,6 +21,12 @@ body {
   margin-bottom: 64px;
 }
 
+@mixin margin-top-bot-2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+
 .main-div {
   width: 100%;
   height: 640px;
@@ -91,5 +97,4 @@ body {
   height: 2px;
   background: rgb(26, 119, 172);
   padding-top: 1px;
-  margin: 0 auto;
 }
