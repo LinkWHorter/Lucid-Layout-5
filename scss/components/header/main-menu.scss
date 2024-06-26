@@ -16,6 +16,11 @@ body {
   @include margins;
 }
 
+@mixin margin-top-bot {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .main-div {
   width: 100%;
   height: 640px;
@@ -124,8 +129,83 @@ body {
   & .second-content {
     width: 40%;
     img {
+      display: none;
       padding-top: 15%;
       width: 100%;
+
+      @include bp-up(sm) {
+        display: block;
+      }
     }
   }
+}
+
+.product-overview {
+  & .title-block {
+    margin-top: 20px;
+    padding: 28px;
+
+    & .content-title, h2 {
+      padding-top: -12px;
+      text-align: center;
+      font-family: 'Source Sans Bold';
+    }
+
+    & .content-title {
+      color: rgb(26, 119, 172);
+    }
+  }
+
+  & .content-block {
+    margin: 0 auto;
+
+    & .features-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: center;
+      @include margin-top-bot;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      & .image-block {
+        display: flex;
+        align-items: center;
+        width: 76px;
+        height: 76px;
+        border-radius: 64px;
+        border: 0.5px solid lightgray;
+        justify-content: center;
+      }
+
+      & .text-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center; /* Выравнивание содержимого блока по горизонтали по центру */
+        align-items: center;
+
+        & > p {
+          width: 180px;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+.blue-line {
+  border: 0;
+  width: 40px;
+  height: 2px;
+  background: rgb(26, 119, 172);
+  padding-top: 1px;
+  margin: 0 auto;
 }
