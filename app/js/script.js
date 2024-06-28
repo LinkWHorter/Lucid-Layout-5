@@ -1,7 +1,8 @@
 $(document).ready(function(){
+    //Slick-slider functionality
     $('.slider-block').slick({
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 2, //Two slides showing for default
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -9,23 +10,24 @@ $(document).ready(function(){
         dots: true,
         responsive: [
             {
-                breakpoint: 540, // Если ширина экрана меньше 360px
+                breakpoint: 540, // If width of window <540-
                 settings: {
-                    slidesToShow: 1 // Показывать только 1 слайд
+                    slidesToShow: 1 // Showing further 1 slide;
                 }
             }
         ]
     });
 
     $('.btn').click(function() {
-        // Удаляем класс .active у всех .plans
+        // Deleting class .active in all .plans
         $('.plans, .btn').removeClass('active');
-        // Находим родительский элемент .free-plan, .business-plan и т.д.
+        // Finding parent-element for .free-plan, .business-plan and other;
         var parentBlock = $(this).closest('.free-plan, .business-plan, .personal-plan, .ultimate-plan');
-        // Находим внутри родительского элемента второй элемент .plans (цена)
+        // Finding second element in parent-element .plans (price-block);
         var secondPlans = parentBlock.find('.plans:nth-child(2)');
-        // Добавляем класс .active ко второму элементу .plans внутри найденного родительского блока
+        // Adding class .active for second element .plans in parent block;
         secondPlans.addClass('active');
+        // Adding class .active for active-button;
         $(this).addClass('active');
     });
 });
