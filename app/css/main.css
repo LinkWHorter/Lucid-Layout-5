@@ -138,10 +138,12 @@ body {
     .block-content .first-content .content-title, .block-content .first-content h1 {
       font-family: 'Source Sans Bold'; }
     .block-content .first-content .content-title {
+      margin-bottom: 0;
       color: #1a77ac; }
     .block-content .first-content h1 {
       color: white; }
     .block-content .first-content p {
+      margin-bottom: 64px;
       color: gray; }
   .block-content .second-content {
     width: 40%; }
@@ -323,6 +325,27 @@ body {
         color: white;
         font-size: small;
         font-family: 'Source Sans Bold'; }
+  .pricings-plans .like-what-you-see {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    font-size: large;
+    background-color: #0f0f0f; }
+    @media (min-width: 568px) {
+      .pricings-plans .like-what-you-see {
+        text-align: left; } }
+    .pricings-plans .like-what-you-see p:first-child {
+      color: lightgray;
+      font-size: 18px; }
+    .pricings-plans .like-what-you-see span {
+      color: white;
+      font-family: 'Source Sans Bold';
+      font-size: 20px; }
+    .pricings-plans .like-what-you-see p:nth-child(2) button {
+      font-size: 12px !important; }
 
 .slider-block div {
   outline: none; }

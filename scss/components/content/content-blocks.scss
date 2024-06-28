@@ -27,6 +27,7 @@
       }
   
       & .content-title {
+        margin-bottom: 0;
         color: rgb(26, 119, 172);
       }
   
@@ -35,6 +36,7 @@
       }
   
       & p {
+        margin-bottom: 64px;
         color: gray;
       }
     }
@@ -295,6 +297,36 @@
             font-family: 'Source Sans Bold';
           }
         }
+      }
+    }
+
+    & .like-what-you-see {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: center;
+      padding: 20px;
+      font-size: large;
+      background-color: rgb(15,15,15);
+
+      @include bp-up(sm) {
+        text-align: left;
+      }
+      
+      & p:first-child {
+        color: lightgray;
+        font-size: 18px;
+      }
+
+      & span {
+        color: white;
+        font-family: 'Source Sans Bold';
+        font-size: 20px;
+      }
+
+      & p:nth-child(2) button {
+        font-size: 12px !important;
       }
     }
   }
