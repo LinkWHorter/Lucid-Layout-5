@@ -222,4 +222,81 @@
     background-color: WhiteSmoke;
   }
 
+  .pricings-plans {
+    background-color: black;
+    background-position: 0px -12px;
+    background-size: cover;
+    background-image: url("/images/Warstwa 8.png");
+
+    & .content-title, h2 {
+      padding-top: -12px;
+      text-align: center;
+      font-family: 'Source Sans Bold';
+    }
+
+    & .content-title {
+      color: rgb(26, 119, 172);
+    }
+
+    & h2 {
+      padding-bottom: 16px;
+      color: white;
+    }
+
+    & .slider-block {
+
+      & .slides {
+        height: 345px;
+        margin-top: 64px;
+        color: white;
+        text-align: center;
+        font-family: 'Source Sans Ital';
+        width: 100px;
+
+        @include bp-up(sm) {
+          text-align: left;
+        }
+
+        & p {
+          width: 100%;
+          font-size: medium;
+
+          @include bp-up(xl) {
+            font-size: large;
+            width: 505px;
+          }
+        }
+
+        & .author-is {
+          justify-content: center;
+          display: flex;
+          text-align: left;
+          gap: 20px;
+
+          @include bp-up(sm) {
+            justify-content: left;
+          }
+
+          & img {
+            width: 45px;
+            height: 45px;
+            border-radius: 30px;
+          }
+
+          & div {
+            color: lightgray;
+            font-family: 'Source Sans Pro';
+          }
+
+          & p {
+            padding-top: -10px;
+            color: white;
+            font-size: small;
+            font-family: 'Source Sans Bold';
+          }
+        }
+      }
+    }
+  }
+
 

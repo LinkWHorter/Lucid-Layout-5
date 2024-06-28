@@ -1,0 +1,30 @@
+.slider-block div {
+    outline: none;
+}
+
+.slick-dots {
+    padding: 35px 0 !important; /* Отступы сверху и снизу */
+    margin: 0 !important; /* Убирает стандартные отступы */
+}
+
+.slick-dots li {
+    @include margin-top-bot;
+    margin: 0 3px !important;
+}
+
+.slick-dots li button:before {
+    content: '' !important;
+    display: inline-block;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    border: 0.5px solid white;
+    background-color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 12px !important;
+    height: 12px !important;
+    border: none;
+    background-color: white;
+}

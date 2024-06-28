@@ -17,13 +17,13 @@ body {
 }
 
 @mixin margin-top-bot {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 64px !important;
+  margin-bottom: 64px !important;
 }
 
 @mixin margin-top-bot-2 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
 }
 
 

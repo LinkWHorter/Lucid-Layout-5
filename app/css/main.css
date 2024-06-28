@@ -7,6 +7,10 @@
   font-family: 'Source Sans Bold';
   src: url("/fonts/SourceSansPro-Bold.otf"); }
 
+@font-face {
+  font-family: 'Source Sans Ital';
+  src: url("/fonts/SourceSansPro-It.otf"); }
+
 body {
   margin: unset;
   padding: unset;
@@ -171,8 +175,8 @@ body {
       flex-wrap: wrap;
       text-align: center;
       align-items: center;
-      margin-top: 64px;
-      margin-bottom: 64px; }
+      margin-top: 64px !important;
+      margin-bottom: 64px !important; }
       .product-overview .content-block .features-block > div {
         display: flex;
         flex-direction: column;
@@ -238,14 +242,14 @@ body {
         text-align: left;
         margin: 0; } }
     .dip-into-details .text-blocks > p, .div-customize .text-blocks > p {
-      margin-top: 32px;
-      margin-bottom: 32px;
+      margin-top: 32px !important;
+      margin-bottom: 32px !important;
       display: flex;
       align-items: center;
       color: gray; }
     .dip-into-details .text-blocks .paragraphs, .div-customize .text-blocks .paragraphs {
-      margin-top: 32px;
-      margin-bottom: 32px;
+      margin-top: 32px !important;
+      margin-bottom: 32px !important;
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
@@ -267,3 +271,84 @@ body {
 
 .div-customize {
   background-color: WhiteSmoke; }
+
+.pricings-plans {
+  background-color: black;
+  background-position: 0px -12px;
+  background-size: cover;
+  background-image: url("/images/Warstwa 8.png"); }
+  .pricings-plans .content-title, .pricings-plans h2 {
+    padding-top: -12px;
+    text-align: center;
+    font-family: 'Source Sans Bold'; }
+  .pricings-plans .content-title {
+    color: #1a77ac; }
+  .pricings-plans h2 {
+    padding-bottom: 16px;
+    color: white; }
+  .pricings-plans .slider-block .slides {
+    height: 345px;
+    margin-top: 64px;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Ital';
+    width: 100px; }
+    @media (min-width: 568px) {
+      .pricings-plans .slider-block .slides {
+        text-align: left; } }
+    .pricings-plans .slider-block .slides p {
+      width: 100%;
+      font-size: medium; }
+      @media (min-width: 1200px) {
+        .pricings-plans .slider-block .slides p {
+          font-size: large;
+          width: 505px; } }
+    .pricings-plans .slider-block .slides .author-is {
+      justify-content: center;
+      display: flex;
+      text-align: left;
+      gap: 20px; }
+      @media (min-width: 568px) {
+        .pricings-plans .slider-block .slides .author-is {
+          justify-content: left; } }
+      .pricings-plans .slider-block .slides .author-is img {
+        width: 45px;
+        height: 45px;
+        border-radius: 30px; }
+      .pricings-plans .slider-block .slides .author-is div {
+        color: lightgray;
+        font-family: 'Source Sans Pro'; }
+      .pricings-plans .slider-block .slides .author-is p {
+        padding-top: -10px;
+        color: white;
+        font-size: small;
+        font-family: 'Source Sans Bold'; }
+
+.slider-block div {
+  outline: none; }
+
+.slick-dots {
+  padding: 35px 0 !important;
+  /* Отступы сверху и снизу */
+  margin: 0 !important;
+  /* Убирает стандартные отступы */ }
+
+.slick-dots li {
+  margin-top: 64px !important;
+  margin-bottom: 64px !important;
+  margin: 0 3px !important; }
+
+.slick-dots li button:before {
+  content: '' !important;
+  display: inline-block;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  border: 0.5px solid white;
+  background-color: transparent; }
+
+.slick-dots li.slick-active button:before {
+  width: 12px !important;
+  height: 12px !important;
+  border: none;
+  background-color: white; }
