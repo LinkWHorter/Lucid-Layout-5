@@ -347,6 +347,78 @@ body {
     .pricings-plans .like-what-you-see p:nth-child(2) button {
       font-size: 12px !important; }
 
+.pricings-plans-second .content-title, .pricings-plans-second h2 {
+  padding-top: -12px;
+  text-align: center;
+  font-family: 'Source Sans Bold'; }
+
+.pricings-plans-second .content-title {
+  color: #1a77ac; }
+
+.pricings-plans-second .pric-plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px; }
+  .pricings-plans-second .pric-plans .plans {
+    border: 0.5px lightgray solid;
+    width: 175px;
+    text-align: center; }
+    .pricings-plans-second .pric-plans .plans .title {
+      font-family: 'Source Sans Bold';
+      color: black;
+      font-size: 18px;
+      text-transform: uppercase; }
+    .pricings-plans-second .pric-plans .plans p {
+      margin: 0 auto;
+      padding: 15px;
+      color: darkgray; }
+    .pricings-plans-second .pric-plans .plans button {
+      margin: 15px; }
+  .pricings-plans-second .pric-plans .plans:nth-child(2) {
+    border-top: 0;
+    border-bottom: 0;
+    padding-top: 0;
+    color: darkgray; }
+    .pricings-plans-second .pric-plans .plans:nth-child(2) p {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      padding-bottom: 0;
+      font-family: "Source Sans Bold";
+      font-size: 45px; }
+      .pricings-plans-second .pric-plans .plans:nth-child(2) p span {
+        padding: 0px;
+        font-size: medium; }
+  .pricings-plans-second .pric-plans .plans:nth-child(3) span {
+    color: dodgerblue; }
+
+.pricings-plans-second .btn {
+  color: black;
+  border: 0.5px lightgray solid; }
+  .pricings-plans-second .btn:hover, .pricings-plans-second .btn.active {
+    background-color: royalblue;
+    color: white; }
+
+.plans.active {
+  background-color: royalblue !important;
+  color: white !important; }
+  .plans.active > p {
+    color: white !important; }
+
+.btn, .btn-lg {
+  color: white;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  text-transform: uppercase;
+  border: 0.5px gray solid;
+  background-color: transparent; }
+
 .slider-block div {
   outline: none; }
 

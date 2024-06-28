@@ -331,4 +331,104 @@
     }
   }
 
+  .pricings-plans-second {
+    & .content-title, h2 {
+      padding-top: -12px;
+      text-align: center;
+      font-family: 'Source Sans Bold';
+    }
 
+    & .content-title {
+      color: rgb(26, 119, 172);
+    }
+
+    & .pric-plans {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      padding: 20px;
+      
+      & .plans {
+        border: 0.5px lightgray solid;
+        width: 175px;
+        text-align: center;
+
+        & .title {
+          font-family: 'Source Sans Bold';
+          color: black;
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+
+        & p {
+          margin: 0 auto;
+          padding: 15px;
+          color: darkgray;
+        }
+
+        & button {
+          margin: 15px;
+        }
+      }
+
+      & .plans:nth-child(2) {
+        border-top: 0;
+        border-bottom: 0;
+        padding-top: 0;
+        color: darkgray;
+
+        & p {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          color: black;
+          padding-bottom: 0;
+          font-family: "Source Sans Bold";
+          font-size: 45px;
+
+          & span {
+            padding: 0px;
+            font-size: medium;
+          }
+        }
+      }
+
+      & .plans:nth-child(3) {
+        & span {
+          color: dodgerblue;
+        }
+      }
+    }
+
+    & .btn {
+      color: black;
+      border: 0.5px lightgray solid;
+
+      &:hover, &.active {
+        background-color: royalblue;
+        color: white;
+      }
+    }
+  }
+
+  .plans.active {
+    background-color: royalblue !important;
+    color: white !important;
+
+    & > p {
+      color: white !important;
+    }
+  }
+
+.btn, .btn-lg {
+  color: white;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  text-transform: uppercase;
+  border: 0.5px gray solid;
+  background-color: transparent;
+}

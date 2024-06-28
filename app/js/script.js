@@ -16,4 +16,16 @@ $(document).ready(function(){
             }
         ]
     });
+
+    $('.btn').click(function() {
+        // Удаляем класс .active у всех .plans
+        $('.plans, .btn').removeClass('active');
+        // Находим родительский элемент .free-plan, .business-plan и т.д.
+        var parentBlock = $(this).closest('.free-plan, .business-plan, .personal-plan, .ultimate-plan');
+        // Находим внутри родительского элемента второй элемент .plans (цена)
+        var secondPlans = parentBlock.find('.plans:nth-child(2)');
+        // Добавляем класс .active ко второму элементу .plans внутри найденного родительского блока
+        secondPlans.addClass('active');
+        $(this).addClass('active');
+    });
 });
