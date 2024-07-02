@@ -59,13 +59,12 @@
       }
     }
   }
-  
+
   .product-overview {
     border-bottom: 0.5px solid lightgray;
   
     & .title-block {
-      margin-top: 20px;
-      padding: 28px;
+      padding: 20px;
   
       & .content-title, h2 {
         padding-top: -12px;
@@ -138,6 +137,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 
     @include bp-up(sm) {
       flex-direction: row;
@@ -426,6 +426,8 @@
         color: white;
       }
     }
+
+    padding-bottom: 24px;
   }
 
   .plans.active {
@@ -480,7 +482,7 @@
       padding: 32px;
       background-color: rgb(26, 26, 26);
       margin-top: 100px;
-      margin-bottom: -75px;
+      margin-bottom: -35px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -488,8 +490,9 @@
       text-transform: uppercase;
 
       @include bp-up (sm) {
-        width: 70%;
+        width: 63%;
         height: 400px;
+        margin-bottom: -55px;
         padding: 80px;
       }
 
@@ -533,15 +536,84 @@
 .btn, .btn-lg {
   color: white;
   margin-top: 5px;
-  
+  margin-right: 7px;
+
   @include bp-up(sm) {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+    padding-left: 23px !important;
+    padding-right: 23px !important;
   }
-  
+
   text-transform: uppercase;
   border: 0.5px gray solid;
   background-color: transparent;
+}
+
+.maps-block {
+  width: 100%;
+  height: 450px;
+}
+
+.footers-block {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include bp-up(sm) {
+    gap: 20px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+  & div {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    @include bp-up(sm) {
+      width: 20%;
+    }
+
+    & a {
+      filter: grayscale(100%);
+      opacity: 50%;
+      transition: filter 0.3s ease, opacity 0.25s ease;
+    }
+
+    & a:hover {
+      filter: grayscale(0%);
+      opacity: 100%;
+    }
+  }
+
+  & p {
+    margin: 0 auto;
+    width: 70%;
+    color: rgb(69, 69, 69);
+
+    @include bp-up(sm) {
+      width: 100%;
+    }
+
+    & a {
+      text-decoration: none;
+      color: rgb(69, 69, 69);
+    }
+  }
+
+  background-color: rgb(26, 26, 26);
 }

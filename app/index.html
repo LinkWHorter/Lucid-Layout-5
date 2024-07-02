@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Logo Site icon link-->
+    <link rel="icon" type="image/x-icon" href="images/logablock.png">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Including CSS and JS for future Slick Slider -->
@@ -20,34 +22,34 @@
 <body>
     <div class="main-div">
     <!-- First Site Title Container -->
-        <div class="container">
+        <div id="main-menu-block-content" class="container">
         <!-- Centering Container -->
             <div class="main-menu">
             <!-- Menu Block -->
                 <div class="title">
-                    <h1>LUCID</h1>
+                    <h1 id="lucid-charsets">LUCID</h1>
                     <div>
                         <p>ONEPAGE</p>
                         <p>THEME</p>
                     </div>
                 </div>
                 <div class="menu">
-                    <a href="">Home</a>
-                    <a href="">Features</a>
-                    <a href="">About</a>
-                    <a href="">Testimonials</a>
-                    <a href="">Pricing</a>
-                    <a href="">Contact</a>
+                    <a id="home-link" href="#" class="active">Home</a>
+                    <a id="feature-link" href="#">Features</a>
+                    <a id="about-link" href="#">About</a>
+                    <a id="tests-link" href="#">Testimonials</a>
+                    <a id="price-link" href="#">Pricing</a>
+                    <a id="contact-link" href="#">Contact</a>
                 </div>
             </div>
-            <div class="block-content">
+            <div id="home-block-content" class="block-content">
             <!-- Content Block -->
                 <div class="first-content">
                     <p class="content-title">INTRODUCING LUCID THEME</p>
                     <h1>Carefull crafted and beautiful landing page.</h1>
                     <p>Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.</p>
-                    <button class="btn-primary btn-lg">DOWNLOAD NOW</button>
-                    <button class="btn-lg">VIEW FEATURES</button>
+                    <button id="download-now-first" class="btn-primary btn-lg">DOWNLOAD NOW</button>
+                    <button id="view-features" class="btn-lg">VIEW FEATURES</button>
                 </div>
                 <div class="second-content">
                     <img src="/images/devices.png" alt="">
@@ -55,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="product-overview">
+    <div id="features-block-content" class="product-overview">
     <!-- Product Overview Block-->
         <div class="container">
             <div class="title-block">
@@ -127,7 +129,7 @@
             </div>
         </div>
     </div>
-    <div class="dip-into-details">
+    <div id="about-block-content" class="dip-into-details">
         <div class="container">
             <div class="image-block">
                 <img src="/images/devices.png" alt="">
@@ -160,7 +162,7 @@
             </div>
         </div>
     </div>
-    <div class="div-customize">
+    <div id="tests-block-content" class="div-customize">
         <div class="container">
             <div class="text-blocks">
                 <div class="title-block">
@@ -181,7 +183,7 @@
             </div>
         </div>
     </div>
-    <div class="pricings-plans">
+    <div id="pricing-block-content" class="pricings-plans">
         <div class="container">
             <div class="title-block">
                 <p class="content-title">
@@ -241,8 +243,8 @@
                 Get this great theme now!
             </p>
             <p>
-                <button class="btn-lg">VIEW FEATURES</button>
-                <button class="btn-primary btn-lg">DOWNLOAD NOW</button>
+                <button id="view-features" class="btn-lg">VIEW FEATURES</button>
+                <button id="download-now-second" class="btn-primary btn-lg">DOWNLOAD NOW</button>
             </p>
         </div>
     </div>
@@ -313,7 +315,7 @@
             </div>
         </div>
     </div>
-    <div class="stay-in-touch">
+    <div id="contacts-block-content" class="stay-in-touch">
         <div class="container">
             <div class="title-block">
                 <p class="content-title">
@@ -341,14 +343,28 @@
                 </div>
             </div>
             <div class="mail-box">
-                <input class="form-control" type="text" placeholder="NAME *">
-                <input class="form-control" type="text" placeholder="EMAIL *">
-                <input class="form-control" type="text" placeholder="SUBJECT *">
-                <input class="form-control" type="text" placeholder="MESSAGE *">
-                <button class="btn-primary">SEND MESSAGE</button>
+                <input id="search-message-input-1" class="form-control" type="text" placeholder="NAME *">
+                <input id="search-message-input-2" class="form-control" type="text" placeholder="EMAIL *">
+                <input id="search-message-input-3" class="form-control" type="text" placeholder="SUBJECT *">
+                <input id="search-message-input-4" class="form-control" type="text" placeholder="MESSAGE *">
+                <button class="send-message-by-link btn-primary">SEND MESSAGE</button>
             </div>
         </div>
     </div>
+    <div class="maps-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.2975761150637!2d25.315233175508528!3d50.714418268323904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997e35f529e9%3A0xeba249b67a64b0a9!2sInternetDevels!5e0!3m2!1sru!2sua!4v1719892951775!5m2!1sru!2sua" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footers-block">
+        <div>
+            <a target="_blank" href="https://www.behance.net/gallery/194945413/Lucid-Dream-Procedural-Generated-Gradients?tracking_source=search_projects%7Clucid"><img src="images/behance.png" alt=""></a>
+            <a target="_blank" href="https://dribbble.com/shots/18129637-Lucid-Dreaming"><img src="images/dribbble.png" alt=""></a>
+            <a target="_blank" href="https://x.com/2028lucid"><img src="images/twitter.png" alt=""></a>
+            <a target="_blank" href="https://www.facebook.com/live.lucid/?locale=ru_RU"><img src="images/facebook.png" alt=""></a>
+            <a target="_blank" href="https://github.com/LinkWHorter/Lucid-Layout-5/tree/master/app"><img src="images/linkedin.png" alt=""></a>
+        </div>
+        <p>COPYRIGHT <a href="#" id="back-home-link">©</a> 2014 LUCID ONEPAGE THEME</p>
+    </div>
+
     <script src="js/script.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

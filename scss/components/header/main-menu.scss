@@ -50,6 +50,11 @@ body {
       flex-direction: row;
       text-align: left;
     }
+
+    @include bp-up(md) {
+      flex-direction: row;
+      text-align: left;
+    }
    
     & .title {
       display: flex;
@@ -60,9 +65,14 @@ body {
         margin: 0;
       }
 
+      @include bp-up(md) {
+        margin: 0;
+      }
+
       & h1 {
         @include margins-full;
         color: white;
+        cursor: pointer;
       }
 
       & p {
@@ -87,6 +97,51 @@ body {
         display: inline;
         flex-direction: row;
       }
+    
+      @include bp-up(md) {
+        text-align: left;
+        display: inline;
+        flex-direction: row;
+      }
+    }
+  }
+
+  & .menu {
+
+    & a.active {
+      position: relative;
+
+      &::after, &::before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        width: 16px;
+
+        @include bp-up(sm) {
+          bottom: -16px;
+        }
+
+        @include bp-up(md) {
+          bottom: -16px;
+        }
+
+        height: 2px;
+        background-color: rgb(26, 119, 172); /* Color of the line */
+      }
+
+      &::before {
+        left: 50%;
+        transform: translateX(-150%);
+      }
+
+      &::after {
+        right: 50%;
+        transform: translateX(75%);
+      }
+
+      /*left: 50%;
+      transform: translateX(-63%);
+      width: 45px;*/
     }
   }
 }
