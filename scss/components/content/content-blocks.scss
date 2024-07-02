@@ -1,5 +1,6 @@
 .block-content {
     padding: 5%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@
     justify-content: space-between;
   
     @include bp-up(sm) {
-      padding: 0%;
+      padding: 10px;
       text-align: left;
       flex-direction: row;
     }
@@ -36,8 +37,12 @@
       }
   
       & p {
-        margin-bottom: 64px;
+        margin-bottom: 32px;
         color: gray;
+
+        @include bp-up(sm) {
+          margin-bottom: 64px;
+        }
       }
     }
   
@@ -72,8 +77,13 @@
         color: rgb(26, 119, 172);
       }
 
+      & h2 {
+        margin: 0;
+      }
+
       & .blue-line { 
         margin: 0 auto;
+        padding-top: 16px;
       }
     }
   
@@ -149,7 +159,7 @@
     }
 
     & h2 {
-      padding-bottom: 16px;
+      margin: 0;
     }
 
     & > div {
@@ -212,6 +222,7 @@
     }
 
     & .blue-line {
+      padding-top: 16px;
       margin: 0 auto;
 
       @include bp-up(sm) {
@@ -241,7 +252,7 @@
     }
 
     & h2 {
-      padding-bottom: 16px;
+      margin: 0;
       color: white;
     }
 
@@ -338,6 +349,10 @@
       font-family: 'Source Sans Bold';
     }
 
+    & h2 {
+      margin: 0;
+    }
+
     & .content-title {
       color: rgb(26, 119, 172);
     }
@@ -422,12 +437,110 @@
     }
   }
 
+  .stay-in-touch {
+    background-color: lightgray;
+
+    & .content-title, h2 {
+      padding-top: -12px;
+      text-align: center;
+      font-family: 'Source Sans Bold';
+    }
+
+    & h2 {
+      margin: 0;
+    }
+
+    & .content-title {
+      color: rgb(26, 119, 172);
+    }
+
+    & .contacts-of-us {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      text-align: center;
+      flex-wrap: wrap;
+      
+      & div > * {
+        justify-content: center;
+        margin: 10px;
+      }
+
+      & p {
+        width: 146px;
+        color: gray;
+      }
+    }
+
+    & .mail-box {
+      position: relative;
+      width: 85%;
+      gap: 16px;
+      margin: 0 auto;
+      padding: 32px;
+      background-color: rgb(26, 26, 26);
+      margin-top: 100px;
+      margin-bottom: -75px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 1;
+      text-transform: uppercase;
+
+      @include bp-up (sm) {
+        width: 70%;
+        height: 400px;
+        padding: 80px;
+      }
+
+      & input {
+        border-color: rgb(69,69,69) !important;
+        color: lightgray !important;
+        background-color: transparent;
+
+        &::placeholder {
+          color: rgb(69,69,69) !important;
+        }
+
+        @include bp-up(sm) {
+          padding: 10px;
+          width: 50%;
+
+          &:nth-child(4) {
+            align-self: flex-end;
+            padding-top: 16px;
+            padding-bottom: 118px;
+          }
+        }
+      }
+      
+      & .btn-primary {
+        width: 100%;
+        border: 0;
+        border-radius: 8px;
+        @include bp-up(sm) {
+          width: 30%;
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+
 .btn, .btn-lg {
   color: white;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  margin-top: 5px;
+  
+  @include bp-up(sm) {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  
   text-transform: uppercase;
   border: 0.5px gray solid;
   background-color: transparent;
